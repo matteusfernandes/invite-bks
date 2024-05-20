@@ -143,6 +143,11 @@ export const ImageSection = styled.div`
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+
+	@media (max-width: 960px) {
+		width: 300px;
+		min-height: 200px;
+	}
 `;
 
 export const Title = styled.h1`
@@ -381,6 +386,7 @@ export const Link = styled.a`
 
 	@media (max-width: 960px) {
 		font-size: 10px;
+		margin: 40px 40px;
 	}
 `;
 

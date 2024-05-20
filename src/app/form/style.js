@@ -242,6 +242,7 @@ export const SubmitButton = styled.button`
 
 	@media (max-width: 960px) {
 		font-size: 10px;
+		margin-right: 0;
 	}
 `;
 
@@ -251,6 +252,11 @@ export const ImageSection = styled.div`
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+
+	@media (max-width: 960px) {
+		width: 300px;
+		min-height: 200px;
+	}
 `;
 
 export const ErrorMessage = styled.div`

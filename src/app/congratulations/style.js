@@ -75,7 +75,7 @@ export const CardContainer = styled.div`
 	}
 
 	@media (max-width: 960px) {
-		flex-flow: row nowrap;
+		flex-flow: column nowrap;
 		height: 100%;
 		margin: 10px;
 	}
@@ -111,7 +111,7 @@ export const ImageSection = styled.div`
 
 	@media (max-width: 960px) {
 		width: 300px;
-		height: 1000px;
+		min-height: 200px;
 	}
 `;
 
@@ -244,5 +244,6 @@ export const Link = styled.a`
 
 	@media (max-width: 960px) {
 		font-size: 10px;
+		margin: 40px 40px;
 	}
 `;
