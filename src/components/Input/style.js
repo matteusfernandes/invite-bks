@@ -109,9 +109,9 @@ export const RemoveButton = styled.button`
 `;
 
 export const Error = styled.p`
-	color: #f1f1f1;
-	font-size: 18px;
-	margin-top: 10px;
+	color: #353ee1;
+	font-size: 12px;
+	margin-top: 3px;
 	text-transform: capitalize;
 	width: 100%;
 `;

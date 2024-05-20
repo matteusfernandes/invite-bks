@@ -68,14 +68,14 @@ export const CardContainer = styled.div`
 		0 0 25px #03e9f4,
 		0 0 50px #03e9f4,
 		0 0 200px #03e9f4;
-	filter: hue-rotate(110deg);
+	filter: hue-rotate(270deg);
 
 	&.active {
-		filter: hue-rotate(110deg);
+		filter: hue-rotate(270deg);
 	}
 
 	@media (max-width: 960px) {
-		flex-flow: column nowrap;
+		flex-flow: row nowrap;
 		height: 100%;
 		margin: 10px;
 	}
@@ -90,12 +90,6 @@ export const TextSection = styled.div`
 	}
 `;
 
-export const MainContainer = styled.div`
-	align-items: center;
-	display: flex;
-	flex-flow: column nowrap;
-`;
-
 export const Title = styled.h1`
 	color: #5ddcff;
 	font-size: 45px;
@@ -108,14 +102,32 @@ export const Title = styled.h1`
 	}
 `;
 
-export const FormContainer = styled.form`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+export const ImageSection = styled.div`
+	flex: 1;
+	background-image: url('/images/skullWhite.svg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 
 	@media (max-width: 960px) {
-		flex-flow: column nowrap;
+		width: 300px;
+		height: 1000px;
 	}
+`;
+
+export const MainContainer = styled.div`
+	align-items: center;
+	display: flex;
+	flex-flow: column nowrap;
+`;
+
+export const Description = styled.p`
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	text-align: justify;
+	font-family: 'Montserrat', sans-serif;
 `;
 
 const animate = keyframes`
@@ -160,14 +172,12 @@ const animate4 = keyframes`
 
 const gradientAnimationDelay = [0.25, 0.5, 0.75];
 
-export const SubmitButton = styled.button`
-	background: transparent;
-	border: none;
+export const Link = styled.a`
 	cursor: pointer;
 	position: relative;
 	display: inline-block;
 	padding: 25px 30px;
-	margin: 0;
+	margin: 40px 0;
 	color: #03e9f4;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -187,14 +197,6 @@ export const SubmitButton = styled.button`
 			0 0 200px #03e9f4;
 		-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 	}
-
-	// &:nth-child(1) {
-	// 	filter: hue-rotate(270deg);
-	// }
-
-	// &:nth-child(2) {
-	// 	filter: hue-rotate(110deg);
-	// }
 
 	span {
 		position: absolute;
@@ -243,18 +245,4 @@ export const SubmitButton = styled.button`
 	@media (max-width: 960px) {
 		font-size: 10px;
 	}
-`;
-
-export const ImageSection = styled.div`
-	flex: 1;
-	background-image: url('/images/skullWhite.svg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-`;
-
-export const ErrorMessage = styled.div`
-	color: #4b1dff;
-	font-size: 14px;
-	margin-top: 5px;
 `;
