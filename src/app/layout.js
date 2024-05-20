@@ -9,6 +9,10 @@ export default function RootLayout({ children }) {
 		<html lang='pt-Br'>
 			<head>
 				<title>Black Skulls Tactical Team</title>
+				<meta
+					http-equiv='Content-Security-Policy'
+					content='upgrade-insecure-requests'
+				></meta>
 			</head>
 			<body>
 				<Providers>
